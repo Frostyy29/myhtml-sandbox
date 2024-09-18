@@ -1,48 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,
-initial-scale=1.0">
-<title>Event Table</title>
-<style>
-table {
-width: 100%;
-border-collapse: collapse;
-}
-th, td {
-border: 1px solid #0a0a0a;
-padding: 8px;
-text-align: center;
-}
-th {
-background-color: #f06dc9;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
-        <h1>Events Table</h1>
-        <table>
+    <h1>Product List</h1>
+    <table>
+        <thead>
             <tr>
-                <th colspan="3">Event Details</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Availability</th>
             </tr>
-            <th>Name of Event</th>
-            <th>Date</th>
-            <th>Location</th>
-            <tr style="background-color: darksalmon;">
-                <td>Wedding</td>
-                <td>October 2, 2024</td>
-                <td>Catholic Cathedral Church, PPC</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Smartphone</td>
+                <td>$699</td>
+                <td>In Stock</td>
             </tr>
-            <tr style="background-color: darksalmon;">
-                <td>Birthday Party</td>
-                <td>September 30, 2024</td>
-                <td>Princesa Garden</td>
+            <tr>
+                <td>Laptop</td>
+                <td>$999</td>
+                <td>Out of Stock</td>
             </tr>
-            <tr style="background-color: darksalmon;">
-                <td>Acquintance Party</td>
-                <td>December 16, 2024</td>
-                <td>Aziza Hotel</td>
+            <tr>
+                <td>Headphones</td>
+                <td>$199</td>
+                <td>In Stock</td>
             </tr>
-        </table>
+            <tr>
+                <td>Smart Watch</td>
+                <td>$299</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>Tablet</td>
+                <td>$399</td>
+                <td>Limited Stock</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+</html>
+
+### Key Features:
+- *Three columns*: Product Name, Price, and Availability.
+- *Table headers* for each column.
+- Alternating row colors using nth-child(even) for a better visual appearance.
+
+---
+
+### Practice Set 05: Event Table
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upcoming Events</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Event Details</th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <th>Event Name</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Music Concert</td>
+                <td>A live concert featuring top artists.</td>
+                <td>2024-10-15</td>
+                <td>New York City</td>
+            </tr>
+            <tr>
+                <td>Art Exhibition</td>
+                <td>Display of modern and classical art.</td>
+                <td>2024-11-01</td>
+                <td>Los Angeles</td>
+            </tr>
+            <tr>
+                <td>Tech Conference</td>
+                <td>Latest advancements in technology and innovation.</td>
+                <td>2024-12-05</td>
+                <td>San Francisco</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
