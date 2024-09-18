@@ -3,55 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Event Table</title>
+<title>Updated Events Table</title>
 <style>
     table {
-        width: 100%;
+        width: 90%;
+        margin: auto;
         border-collapse: collapse;
     }
     th, td {
-        border: 1px solid #0a0a0a;
-        padding: 8px;
+        border: 1px solid #333;
+        padding: 12px;
         text-align: center;
     }
     th {
-        background-color: #f06dc9;
+        background-color: #228B22; /* Green header */
+        color: white;
     }
-    
+    td {
+        background-color: #f0f0f0; /* Light gray for table cells */
+    }
+    td:nth-child(3), th:nth-child(3) {
+        width: 25%; /* Adjusted width for the 3rd column */
+    }
     td:nth-child(2), th:nth-child(2) {
-        width: 20%;
+        width: 25%; /* Adjusted width for the 2nd column */
     }
-    
-    tr:nth-child(n+2) {
-        background-color: darksalmon;
+    td:nth-child(1), th:nth-child(1) {
+        width: 50%; /* Adjusted width for the 1st column */
+    }
+    tr:nth-child(even) td {
+        background-color: #D3D3D3; /* Darker gray for alternating rows */
     }
 </style>
 </head>
 <body>
-    <h1>Events Table</h1>
+    <h1 style="text-align: center;">Updated Events Table</h1>
     <table>
         <tr>
-            <th colspan="3">Event Details</th>
+            <th colspan="3">Upcoming Event Information</th>
         </tr>
         <tr>
-            <th>Name of Event</th>
-            <th>Date</th>
-            <th>Location</th>
+            <th>Event Title</th>
+            <th>Event Date</th>
+            <th>Venue</th>
         </tr>
         <tr>
-            <td>ML tournament</td>
-            <td>November 5, 2024</td>
-            <td>SM Palawan, PPC</td>
+            <td>AI & Robotics Conference</td>
+            <td>October 10, 2024</td>
+            <td>City Convention Center</td>
         </tr>
         <tr>
-            <td>Cosplay</td>
-            <td>November 7, 2024</td>
-            <td>SM Palawan, PPC</td>
+            <td>International Cosplay Gathering</td>
+            <td>November 15, 2024</td>
+            <td>Grand Mall Arena</td>
         </tr>
         <tr>
-            <td>BINI Concert</td>
-            <td>December 5, 2024</td>
-            <td>Capitol</td>
+            <td>Concert: Symphony of Lights</td>
+            <td>December 20, 2024</td>
+            <td>Capitol Open Grounds</td>
         </tr>
     </table>
 </body>
